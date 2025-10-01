@@ -33,10 +33,35 @@
 
         <div class="navbar__s3">
             <p>Trending Courses</p>
-            <p>My Learning</p>
-            <i class="fa-solid fa-cart-shopping" style="color: #000000;"></i>
-            <i class="fa-solid fa-bell" style="color: #000000;"></i>
-            <i class="fa-solid fa-user" style="color: #000000;"></i>
+            <div class="navbar__s3__learning">
+                <p>My Learning</p>
+                <div class="navbar__s3__learning__popup">
+                    <p>you have'nt purchased yet</p>
+                </div>
+
+
+            </div>
+            <div class="navbar__s3__cart">
+                <i class="fa-solid fa-cart-shopping" style="color: #000000;"></i>
+                <div class="navbar__s3__cart__popup">
+                    <p class="msg">your cart is empty</p>
+                    <p class="msgg">Keep Shopping</p>
+                </div>
+            </div>
+
+            <div class="navbar__s3__notification">
+                <i class="fa-solid fa-bell" style="color: #000000;"></i>
+                <div class="navbar__s3__notification__popup">
+                    <p>you have no notifications</p>
+                </div>
+            </div>
+            <div class="navbar__s3__account">
+                <i class="fa-solid fa-user" style="color: #000000;"></i>
+                <div class="navbar__s3__account__popup">
+                    <p>your account</p>
+                </div>
+            </div>
+
         </div>
 
 
@@ -52,7 +77,7 @@
     </div>
     <div class="flash-image">
         <img src="./images/f.png">
-        <div class="overlay-box">
+        <div class="flash-image__overlaybox">
             <h1>Master tomorrow's skills today</h1>
             <p>Power up your AI, career, and life skills with the most up-to-date, expert-led learning.</p>
             <button>Try it</button>
