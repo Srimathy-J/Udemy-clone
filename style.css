@@ -115,12 +115,15 @@
     border-radius: 20px;
     padding: 10px;
     border: #A435F0 1px solid;
+    transition: 1s;
 }
 
 .categories p:hover {
     cursor: pointer;
     background-color: white;
     color: #A435F0;
+    transition: 2s;
+    
 }
 
 .flash-image img {
@@ -146,6 +149,23 @@
         rgba(0, 0, 0, 0.17) 0px 12px 13px,
         rgba(0, 0, 0, 0.09) 0px -3px 5px;
     background-color: white;
+    animation-name: zoom;
+    opacity: 0;
+    animation-fill-mode: forwards;
+    animation-duration: 2s;
+}
+@keyframes zoom {
+    0%{
+        opacity: 0;
+        transform: scale(0);
+
+    }
+    100%{
+        opacity: 1;
+        transform: scale(0.7);
+
+    }
+    
 }
 
 .flash-image__overlaybox h1 {
@@ -165,10 +185,12 @@
     border: #A435F0 1px solid;
     background-color: transparent;
     color: #892DE1;
+    transition: 1s;
 }
 
 .flash-image__overlaybox button:hover {
     background-color: #d7beef;
+    transition: 2s;
 }
 
 .recommendation {
